@@ -1,0 +1,29 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.form{
+    text-align: center;
+    margin: 120px;
+    border-color: black;
+}
+.form form{
+    border-color: black;
+    background-color: white;
+    
+}
+.form form .input input{
+    width: 360px;
+    height: 45px;
+    margin-top: 14px;
+    border-color: black;
+    background-color: white;
+    
+}
+.form form .signup-button input{
+    width: 360px;
+    height: 45px;
+    margin-top: 14px;
+    background-color: #43a63a;
+}

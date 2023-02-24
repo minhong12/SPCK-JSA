@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="index.html" name="signup">
+                <div id="head">
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Username" name="username">
+                <div class="input">
+                    <input type="email" placeholder="Email" name="email">
+                    <p style="display: none; color: red;">Email invalid</p>
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Phone Number" name="number">
+                    <p style="display: none; color: red;">Phone number invalid</p>
+                <div class="input">
+                    <input type="password" placeholder="Password" name="password">
+                    <p>Required at least 8 characters, contain at least a letter and number</p>
+                    <p style="display: none; color: red;">Password too short, try again</p>
+                </div>
+                <div class="signup-button">
+                    <input type="submit" value="Sign Up" onclick="">
+                    <p></p>
+                </div>
+                <p>Already have an account? <a href="login.html">Log In!</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

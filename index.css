@@ -1,0 +1,47 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+form.container-fluid {
+    width: 400px !important;
+}
+.banner{
+    display: flex;
+    margin-top: 16px;
+}
+.banner .banner-img img{
+    width: 500px;
+    height: auto;
+}
+.banner .banner-welcome{
+    padding-left: 40px;
+    width: 1000px;
+    height: 500px;
+    background-color: pink;
+    border-radius: 6px;
+}
+.banner .banner-welcome h1{
+    padding-top: 100px;
+    font-size: 55px;
+}
+.banner-welcome p{
+    font-size: 24px;
+}
+.banner-welcome input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: yellow;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.banner-welcome button{
+    width: 200px;
+    height: 50px;
+    background-color: darksalmon;
+    border-radius: 5px;
+    border-color: goldenrod;
+}
