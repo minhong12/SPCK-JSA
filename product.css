@@ -1,0 +1,10 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    align-items: center;
+    justify-content: space-between;
+}
+form.container-fluid {
+    width: 400px !important;
+}
