@@ -8,3 +8,21 @@
 form.container-fluid {
     width: 400px !important;
 }
+.product-detail{
+    display: flex;
+}
+.prod-head .img img{
+    width: 500px;
+}
+.details{
+    padding-left: 10px;
+}
+.detail-head h3{
+    font-size: 45px;
+}
+.detail-data p{
+    font-size: 20px;
+}
+.cart button{
+    
+}

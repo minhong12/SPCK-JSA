@@ -8,3 +8,24 @@
 form.container-fluid {
     width: 400px !important;
 }
+.products a img{
+    width: 200px;
+    height: auto;
+}
+.products a{
+    text-decoration: none;
+    color: black;
+}
+.products{
+    text-align: center;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    height: auto;
+    background: rgb(135,194,230);
+    background: linear-gradient(90deg, rgba(135,194,230,1) 0%, rgba(241,94,240,1) 50%, rgba(252,176,69,1) 100%); 
+}
+.prods{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+}

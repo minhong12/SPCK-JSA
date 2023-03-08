@@ -13,28 +13,28 @@
 <body>
     <div class="container">
         <div class="form">
-            <form action="index.html" name="signup" onsubmit="return validata()">
+            <form action="index.html" name="signup" onsubmit="return validata()" id="signup">
                 <div id="head">
                     <h2>Sign Up</h2>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Username" name="username">
+                    <input type="text" id="username" placeholder="Username" name="username">
                 <div class="input">
-                    <input type="text" placeholder="Email" name="email">
-                    <p id="email" style="display: none; color: red;">Email invalid</p>
+                    <input type="text" id="email" placeholder="Email" name="email">
+                    <p id="email">Email invalid</p>
                 </div>
                 <div class="input">
-                    <input type="text" placeholder="Phone Number" name="number">
-                    <p id="number" style="display: none; color: red;">Phone number invalid</p>
+                    <input type="text" id="number" placeholder="Phone Number" name="number">
+                    <p id="number">Phone number invalid</p>
                 <div class="input">
-                    <input type="password" placeholder="Password" name="password">
-                    <p>Required at least 8 characters, contains at least a number and a letter</p>
-                    <p id="password" style="display: none; color: red;">Password too short, try again</p>
+                    <input type="password" id="password" placeholder="Password" name="password"><br>
+                    <span>Required at least 8 characters, contains at least a number and a letter</span>
+                    <p id="password">Password too short, try again</p>
                 </div>
                 <div class="signup-button">
                     <button type="submit">Sign Up</button>
                 </div>
-                <p>Already have an account? <a href="login.html">Log In!</a></p>
+                <span>Already have an account? <a href="login.html">Log In!</a></span>
             </form>
         </div>
     </div>

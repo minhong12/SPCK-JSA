@@ -6,7 +6,7 @@ const validata =()=>{
     var ok = true;
 
     // Biểu thức chính quy
-    var checkpass = /^([a-z]){1}([\w_\.!@#$%^&*()]+){5,31}$/;
+    var checkpass = /^([a-zA-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$/;
     var checkemail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
     var checknumber =/^0[0-9]{9,11}$/;
 
@@ -35,3 +35,44 @@ const validata =()=>{
         return ok;
     } else {return ok};
 }
+
+
+let newList = JSON.parse(localStorage.getItem("login"));
+console.log(newList);
+if(newList == null) {
+    localStorage.setItem("login",JSON.stringify(accountdata))
+}
+
+let signup = document.querySelector("#signup");
+if(signup) {
+    signup.addEventListener("submit" , (e)=>{
+        e.preventDefault()
+        dangki()
+    })
+}
+const dangki=()=>{
+    let username = document.querySelector("#username").value;
+    let email = document.querySelector("#email").value;
+    let number = document.querySelector("#number").value;
+    let password = document.querySelector("#password").value;
+    // let dangki = document.querySelector("#signup");
+
+    let newAcc={
+        username:username,
+        email:email,
+        number:number,
+        password:password,
+    }
+    
+    newList.push(signup)
+    localStorage.setItem("username",username);
+    localStorage.setItem("password",password);
+    localStorage.setItem("login",JSON.stringify(newList))
+    window.location.href = "login.html";
+
+    // newList.push(signup)
+    
+    // window.location.href = "login.html";
+
+}
+console.log(signup)
